@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
@@ -30,7 +31,7 @@ function CreatePrompt() {
         timeout: 10000, // Set the timeout to 10 seconds (adjust as needed)
       });
 
-      console.log(response)
+      console.log(response);
 
       if (response.ok) {
         router.push("/");

@@ -5,12 +5,16 @@ import { connectToDB } from "@utils/database";
 import User from "@models/user";
 
 const handler = NextAuth({
-  providers: [
-    GoogleProvider({
-      clientId: process.env.GOOGLE_ID,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    }),
-  ],
+ 
+
+   providers: [
+     GoogleProvider({
+       clientId: process.env.GOOGLE_ID,
+       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+     }),
+   ],
+
+ 
 
   callbacks: {
     async session({ session }) {
