@@ -1,6 +1,6 @@
 // "use client";
 import Provider from "@components/Provider";
-import Navbar from "@components/nav";
+import Navbar from "@components/Nav";
 import "@styles/globals.css";
 
 export const metadata = {

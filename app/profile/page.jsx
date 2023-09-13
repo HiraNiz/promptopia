@@ -48,7 +48,9 @@ const MyProfile = () => {
          return p._id===post._id
          })
          setPosts(filteredPosts)
-      } catch (error) {}
+      } catch (error) {
+        console.error(error.message)
+      }
     }
   };
 
